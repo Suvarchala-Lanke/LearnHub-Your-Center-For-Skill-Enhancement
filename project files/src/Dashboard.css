@@ -1,0 +1,112 @@
+/* src/pages/Dashboard.css */
+/* Dashboard.css */
+/* Dashboard.css */
+
+/* Dashboard.css */
+
+/* ✅ General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ✅ Course Cards */
+.course-card {
+  background-color: beige;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%; /* 🔁 Important for grid responsiveness */
+  box-sizing: border-box;
+}
+
+.course-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.course-card h4 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.course-card a {
+  text-decoration: none;
+  color: #1e90ff;
+}
+
+.course-card a:hover {
+  text-decoration: underline;
+}
+
+.course-card button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.course-card button:hover {
+  background-color: #0078d4;
+}
+
+/* ✅ Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* ✅ Progress Bar */
+.progress-bar {
+  background: #eee;
+  border-radius: 5px;
+  height: 10px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: green;
+  height: 100%;
+  transition: width 0.4s ease-in-out;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .course-card {
+    padding: 0.8rem;
+  }
+
+  .search-bar {
+    font-size: 14px;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 13px;
+  }
+}
+/* ✅ Grid Layout for Course Cards */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
